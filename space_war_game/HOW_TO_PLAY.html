@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+        <title>HOW TO PLAY</title>
+        <style>
+
+            /*전체 배경색은 검정색이다.*/
+            body{
+                background-color: black;
+            }
+
+            /*정렬, 글자크기, 높이, 색상을 설정한다..*/ 
+            h1{
+                text-align: center;
+                font-size: 80px;
+                height: 60px;
+                color: rgb(0, 255, 170);
+            }
+
+            /*p태그에 대한 css이다.*/ 
+            p{
+                text-align: center;
+                font-size: 15px;
+                height: 30px;
+                font-weight: bold;
+                color : white;
+            }
+
+            /*div태그에 대한 css이다.*/ 
+            div{
+                text-align: center;
+                font-size: 25px;
+                font-weight: bold;
+                color : rgb(0, 255, 170);
+            }
+
+            /*div태그는 a라는 id를 사용하였기 때문에 마우스 커서가 p태그에 올라가면(hover), 다음을 적용한다.*/ 
+            #a:hover {
+                position : relative;
+                font-size: 28px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HOW TO PLAY</h1>
+        <br><br><br>
+        <p>★ 오른쪽(→),왼쪽(←)방향키로 패드를 조정하여 볼이 떨어지지 않도록 하세요. ★</p>
+        <p>★ 볼이 바닥에 떨어지지 않는 게임입니다. ★</p>
+        <p>★ 목숨(♥)은 총3개입니다. ★</p>
+        <p>★ LEVEL이 올라갈 수록 볼과 패드의 크기가 작아집니다. ★</p>
+        <P>★ 벽돌을 부수면 100점이 추가됩니다.</p>
+        <p>★ LEVEL 1~5에 나오는 떨어지는 연두색 아이템을 먹으면 100점이 추가됩니다. ★</p>
+        <p>★ LEVEL5가 끝나면 보너스게임이 시작됩니다. 보너스 게임에서는 총알을 획득할 수 있습니다. ★</p>
+        <p>★ 총알의 유무에 따라 보스전이 진행되며 'SPACE BAR'를 사용하여 좌,우로 움직이는 UFO를 쏘세요.(UFO를 맞출때 마다 500점이 추가됩니다.) ★</p>
+        <br><br><br>
+        <div OnClick="location.href ='GAME_MENU.html'" id = 'a'>☜ GO TO MENU</P><!--div태그를 클릭하게 되면 적혀있는 해당 주소로 이동하도록 설정-->
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>GMAE MENU</title>
+        <style>
+            /*전체 배경색은 검정색이다.*/
+            body { background-color : rgb(0, 0, 0); } 
+            
+            /*글자의 색상이 바뀌는 애니매이션의 이름을 change라고 정의한다..*/
+            @keyframes change {
+                from { color: rgb(0, 0, 0);}
+                to { color: rgb(0, 255, 170);}
+            }
+
+            /*정렬, 애니메이션 적용, 글자크기, 높이들을 설정한다..*/           
+            h1 { text-align: center;
+                animation-name: change;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                font-size: 90px;
+                height: 60px;
+            }
+
+            /*요소들이 서로 한줄을 이루며 중앙에 위치한다.*/  
+            #center{ 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 50vh; /*창의 크기에 따라 비율에 맞춰지는 높이이다.*/
+            }
+
+            /*요소들이 서로 한줄을 이루며 중앙에 위치한다.*/  
+            #menu{ 
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+
+            /*p태그에 대한 css이다.*/  
+            p{
+                height : 170px;
+                width : 370px;
+                border: 30px solid rgb(0, 0, 0);
+                text-align : center;
+                font-weight: bold;
+                font-size: 45px;
+                color : white; 
+                background : rgb(16, 197, 137);
+                padding : 10px;
+            }
+
+            /*모든 p태그는 a라는 id를 사용하였기 때문에 마우스 커서가 p태그에 올라가면(hover), 다음을 적용한다.*/ 
+            #a:hover {
+                position : relative;
+                height:180px;
+                width: 380px;
+                background : rgb(0, 255, 157);
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <br><br>
+        <h1>SPACE WARS GAME</h3> 
+        
+            <!--p태그에 대한 form이 2개인 이유는 첫번째 form이 두번째form의 수직 정렬을 위한 것이기 때문이다.(min-height: 50vh;)-->
+        <form id ="center"> 
+            <form id = "menu">        
+                <p OnClick="location.href ='brickbreaker.html'" id="a"><br>GAME START</p><!--P태그를 클릭하게 되면 적혀있는 해당 주소로 이동하도록 설정-->
+                <p OnClick="location.href ='HOW_TO_PLAY.html'" id="a"><br>HOW TO PLAY</p><!--P태그를 클릭하게 되면 적혀있는 해당 주소로 이동하도록 설정-->
+                <p OnClick="location.href ='DEVELOPER.html'" id="a"><br>DEVELOPER</p><!--P태그를 클릭하게 되면 적혀있는 해당 주소로 이동하도록 설정-->
+            </form>
+        </form>
+    </body>
+</html>

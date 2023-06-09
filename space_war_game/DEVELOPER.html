@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+        <title>DEVELOPER</title>
+        <style>
+            /*전체 배경색은 검정색이다.*/
+            body{
+                background-color: black;
+            }
+
+            /*정렬, 글자크기, 높이, 색상을 설정한다..*/   
+            h1{
+                text-align: center;
+                font-size: 80px;
+                height: 60px;
+                color: rgb(0, 255, 170);
+            }
+
+            /*p태그에 대한 css이다.*/ 
+            p{
+                text-align: center;
+                font-size: 15px;
+                height: 30px;
+                font-weight: bold; /*굵기 설정*/ 
+                color : white;
+            }
+
+            /*div태그에 대한 css이다.*/ 
+            div{
+                text-align: center;
+                font-size: 25px;
+                font-weight: bold; /*굵기 설정*/ 
+                color : rgb(0, 255, 170);
+            }
+
+            /*div태그는 a라는 id를 사용하였기 때문에 마우스 커서가 p태그에 올라가면(hover), 다음을 적용한다.*/ 
+            #a:hover {
+                position : relative;
+                font-size: 28px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>DEVELOPER</h1>
+        <br><br><br>
+        <p>Name : 조윤찬</p>
+        <p>University : 부경대학교</p>
+        <p>Student ID : 201812518</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <br><br><br>
+        <div OnClick="location.href ='GAME_MENU.html'" id = 'a'>☜ GO TO MENU</P><!--div태그를 클릭하게 되면 적혀있는 해당 주소로 이동하도록 설정-->
+    </body>
+</html>
